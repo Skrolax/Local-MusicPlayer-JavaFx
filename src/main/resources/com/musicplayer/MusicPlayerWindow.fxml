@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="710.0" prefHeight="400.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.musicplayer.MusicPlayerController">
+   <children>
+      <Slider fx:id="songPlayedLengthSlider" layoutY="320.0" onMousePressed="#sliderPressed" prefHeight="14.0" prefWidth="710.0" showTickMarks="true" />
+      <Button fx:id="playButton" layoutX="336.0" layoutY="362.0" mnemonicParsing="false" onAction="#playCurrentSong" text="Play" />
+      <Button fx:id="previousSongButton" layoutX="229.0" layoutY="362.0" mnemonicParsing="false" onAction="#previousSong" text="Previous" />
+      <Button fx:id="nextSongButton" layoutX="429.0" layoutY="362.0" mnemonicParsing="false" onAction="#nextSong" text="Next" />
+      <Label fx:id="songNameLabel" layoutX="184.0" layoutY="334.0" prefHeight="17.0" prefWidth="342.0" textAlignment="CENTER" />
+      <ListView fx:id="playlistView" layoutX="122.0" layoutY="53.0" prefHeight="235.0" prefWidth="449.0" />
+      <Slider fx:id="volumeSlider" layoutX="528.0" layoutY="368.0" majorTickUnit="10.0" minorTickCount="1" value="50.0" />
+      <Button fx:id="refreshListButton" layoutX="500.0" layoutY="74.0" mnemonicParsing="false" onAction="#refreshList" text="Refresh" />
+      <Label fx:id="volumeLabel" layoutX="534.0" layoutY="343.0" text="Volume:" />
+   </children>
+</AnchorPane>
